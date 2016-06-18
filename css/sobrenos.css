@@ -1,0 +1,75 @@
+#first {
+	background-color: #fff;
+}
+
+
+#logo-name > img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#logo-name:first-child {
+	margin-top: 110px;
+}
+
+
+#second {
+	background-color: #919ccb;
+}
+
+.text > h3{
+	margin-bottom: 20px;
+}
+
+.text {
+	line-height: 1.7;
+}
+
+
+#vision > h3 {
+	color: #fff;
+}
+#vision > p {
+	color: #fff;
+}
+
+#lamp > img {
+	display: block;
+	margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+
+	.container > .row > div {
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+
+	.text {
+		text-align: left;
+		padding-right: 200px;
+	}
+
+	#lamp {
+		margin-top: 200px;
+	}
+
+}
+
+
+@media (max-width: 991px) {
+
+	.container > .row > div {
+		margin-bottom: 30px;
+	}
+
+	#lamp {
+		margin-top: 40px;
+	}
+
+	.text {
+		text-align: center;
+	}
+}

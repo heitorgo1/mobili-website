@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--FAVICON -->
+		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
+		<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="favicon/manifest.json">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<!--\FAVICON -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="stylesheet" href="css/sobrenos.css">
+		<title>Mobili Tech</title>
+	</head>
+	<body>
+		<header>
+			<nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div id="logo-img" class="home" alt="Logo Image">
+					</div>
+
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#modal-fullscreen" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<div id="links" class="collapse navbar-collapse">
+						<ul id="nav-list" class="nav navbar-nav">
+							<li><a class="portfolio" href="#">Portfólio</a></li>
+							<li><a class="sobrenos" href="#">Sobre Nós</a></li>
+							<li class="expandable">
+								<a href="#">Contato</a>
+								<div class="expand hidden-xs">
+									<span>Contato</span>
+									<a  href="mailto:atendimento@mobilitech.me">
+										<i class="fa fa-envelope-o" aria-hidden="true"></i><span>atendimento@mobilitech.me</span>
+									</a>
+									<a target="_blank" href="https://www.facebook.com/techmobili">
+										<i class="fa fa-facebook" aria-hidden="true"><div></div></i><span>/techmobili</span>
+									</a>
+
+									<a target="_blank" href="https://www.instagram.com/techmobili">
+										<i class="fa fa-instagram" aria-hidden="true"></i><span>@techmobili</span>
+									</a>
+									<a href="#">
+										<i class="fa fa-whatsapp" aria-hidden="true"></i><span>(75) 99227-4427</span>
+									</a>
+								</div> <!--/expand-->
+							</li>
+						</ul>
+					</div><!--/links-->
+				</div> <!--/container-->
+			</nav>
+		</header>
+		
+		<!--/MODAL-->
+		<div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> <span class="sr-only">Close</span></button>
+						<div id="white-logo-img" class="home"></div>
+					</div>  <!--/modal-header-->
+					<div class="modal-body">
+						<a href="#" class="portfolio" >Portfólio</a>	
+						<a href="#" class="sobrenos" >Sobre Nós</a>
+						<a href="intent://send/5575992274427#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end"><i class="fa fa-whatsapp" aria-hidden="true"></i>(75) 99227-4427</a>
+					</div>
+					<div class="modal-footer">
+						<div class="link-group">
+							<div class="contact-link"><a target="_blank" href="https://www.facebook.com/techmobili"><i class="fa fa-facebook"></i></a></div>
+							<div class="contact-link"><a target="_blank" href="https://www.instagram.com/techmobili"><i class="fa fa-instagram"></i></a></div>
+							<div class="contact-link"><a href="mailto:atendimento@mobilitech.me"><i class="fa fa-envelope-o"></i></a></div>
+						</div>
+					</div>
+				</div> <!--/modal-content-->
+			</div>
+		</div>
+		<!--/MODAL-->
+
+		<section id="main-content">
+		</section> <!--/main-content-->
+
+		<footer class="panel-footer">
+			<div class="container">
+				<div class="text-center">
+					<span>2016 Mobili Tech | Todos os direitos reservados</span>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JS -->
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/ajax-utils.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

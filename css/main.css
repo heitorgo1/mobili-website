@@ -1,0 +1,297 @@
+@font-face {
+	font-family: Asap;
+	src: url('../fonts/Asap-Regular.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Asap', sans-serif;
+	font-size: 16px;
+	color: #666666;
+}
+
+/* START NAVBAR*/
+#logo-img {
+	background: url('../images/logo.png') no-repeat;
+	width: 60px;
+	height: 70px;
+}
+
+#logo-img:hover {
+	cursor: pointer;
+}
+
+.navbar, .navbar-default {
+	max-height: 70px;
+    box-shadow: 0 1px 0 #53acfb;
+	background-color: #fff;
+}
+
+#navbarToggle {
+	border: 0;
+	border-radius: 0;
+	margin-top: -50px;
+}
+
+#nav-list {
+	margin: 10px 0 10px;
+}
+
+#nav-list > li {
+	color: #666666; 
+	text-align: center;
+}
+
+#nav-list > li > a:hover {
+	color: #53acfb;
+}
+
+.expandable {
+	position: relative;
+	z-index: 2;
+}
+
+.expandable > a {
+	background: none;
+	z-index: 1;
+}
+
+.expand > span {
+	visibility: hidden;
+	color: #53acfb;
+}
+
+.expand {
+	margin-top: -40px;
+	width: 10rem;
+	height: 4rem;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	transition-delay: initial;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	z-index: 2;
+	text-align: right;
+	padding: 14px 15px 13px 20px;
+}
+
+.expand:hover {
+	width: 32rem;
+	height: 20rem;
+	background-color: #fff;
+	box-shadow: 0 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.expand:hover > span {
+	visibility: visible;
+}
+
+
+.expand > a {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+}
+
+.expand > span + a {
+	margin-top: 30px;
+}
+
+.expand > a + a {
+	margin-top: 10px;
+}
+
+.expand > a > i {
+	margin-right: 22px;
+	display: inline-block;
+	width: 25px;
+	font-size: 1.2em;
+}
+
+
+.expand > a:hover i, .expand > a:hover span {
+	color: #53acfb;
+}
+
+#links > ul > .active > a{
+	background-color: transparent;
+	color: #53acfb;
+}
+
+
+/* END NAVBAR*/
+
+/* START MODAL */
+
+.modal-fullscreen {
+  background: #53acfb;
+  opacity: 1;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+.modal-header {
+	border: 0;
+}
+
+.close {
+	color: #fff;
+	opacity: 1;
+}
+
+.modal .close > i {
+	font-size: 1.5em;
+	color: rgba(255,255,255,1);
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+#white-logo-img {
+	background: url('../images/logo_white.png') no-repeat;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.modal-body > a {
+	color: #fff;
+	font-size: 1.3em;
+	display: block;
+	margin: 50px auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+.modal-body > a > i {
+	color: #fff;
+	font-size: 1.4em;
+	margin-right: 15px;
+}
+
+.modal-footer {
+	text-align: center;
+	border: 0;
+}
+
+.modal-footer > .link-group {
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.modal-footer .link-group .contact-link {
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	padding-top: 10px;
+	border-radius: 20px;
+	background-color: white;
+	margin-top: 10px;
+}
+
+.modal-body > a:hover {
+	color: #0000ff;
+	
+}
+
+.modal-footer .link-group .contact-link:nth-child(2) {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.modal-footer .link-group .contact-link > a > i {
+	color: #53acfb;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+/* END MODAL */
+
+/* START MAIN CONTENT */
+
+
+#main-content {
+	margin-top: 70px;
+}
+
+#loader {
+	margin-top: 150px;
+}
+
+/* END MAIN CONTENT */
+
+/* START FOOTER */
+
+.panel-footer span {
+	font-size: .8em;
+}
+
+
+/* END FOOTER */
+
+/** Large Devices */
+@media (min-width: 992px) {
+	#nav-list > li {
+		margin: 0 0 0 180px;
+	}
+
+	#logo-img {
+		float: left;
+	}
+}
+
+/** Medium Devices*/
+@media (min-width: 768px) and (max-width: 991px){
+
+	#nav-list {
+		margin-top: -60px;
+		margin-left: 100px;
+	}
+
+	#nav-list > li {
+		margin: 0 50px;
+	}
+
+}
+
+/** Mobile Devices */
+@media (max-width: 767px) {
+
+	.navbar, .navbar-default {
+		max-height: 400px;
+	}
+
+	.expand {
+		display: none;
+	}
+
+	.expand > span {
+		visibility: hidden;
+	}
+
+	#logo-img {
+		margin: 0 auto;
+	}
+}
