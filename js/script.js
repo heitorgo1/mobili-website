@@ -56,13 +56,13 @@ $('.home').click(function(){
 $('.portfolio').click(function(){
 	loadContent(portfolioUrl);
 	$('.portfolio').parent().addClass('active');
-	$('#logo-img').css('background',"url('../images/logo_nofill.png') no-repeat");
+	$('#logo-img').css('background',"url('../images/nofill_logo.png') no-repeat");
 });
 
 $('.sobrenos').click(function(){
 	loadContent(sobrenosUrl);
 	$('.sobrenos').parent().addClass('active');
-	$('#logo-img').css('background',"url('../images/logo_nofill.png') no-repeat");
+	$('#logo-img').css('background',"url('../images/nofill_logo.png') no-repeat");
 });
 
 
