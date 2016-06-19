@@ -1,3 +1,7 @@
+html {	
+	overflow-x: hidden;
+}
+
 #first {
 	background-color: #fff;
 }
@@ -42,7 +46,7 @@
 
 @media (min-width: 992px) {
 
-	.container > .row > div {
+	.row > div > .container > .row > div {
 		margin-top: 80px;
 		margin-bottom: 80px;
 	}
@@ -61,7 +65,7 @@
 
 @media (max-width: 991px) {
 
-	.container > .row > div {
+	.row > div > .container > .row > div {
 		margin-bottom: 30px;
 	}
 
