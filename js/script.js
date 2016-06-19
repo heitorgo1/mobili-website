@@ -50,19 +50,19 @@ $(function(){
 
 $('.home').click(function(){
 	loadContent(homeUrl);
-	$('#logo-img').css('background',"url('../images/logo.png') no-repeat");
+	$('#logo-img').css('background',"url('images/logo.png') no-repeat");
 });
 
 $('.portfolio').click(function(){
 	loadContent(portfolioUrl);
 	$('.portfolio').parent().addClass('active');
-	$('#logo-img').css('background',"url('../images/nofill_logo.png') no-repeat");
+	$('#logo-img').css('background',"url('images/nofill_logo.png') no-repeat");
 });
 
 $('.sobrenos').click(function(){
 	loadContent(sobrenosUrl);
 	$('.sobrenos').parent().addClass('active');
-	$('#logo-img').css('background',"url('../images/nofill_logo.png') no-repeat");
+	$('#logo-img').css('background',"url('images/nofill_logo.png') no-repeat");
 });
 
 
