@@ -32,7 +32,7 @@ $(function(){
 		var rect = el.getBoundingClientRect();
 
 		return (
-				rect.top >= 0 &&
+				rect.top >= -30 &&
 				rect.bottom-101 <= (window.innerHeight || document.documentElement.clientHeight)  /*or $(window).height() */
 			   );
 	}
@@ -43,8 +43,8 @@ $(function(){
 			if (el.css('transform') == "translateY(0)") return;
 			el.css('transform',"translateY(0)");
 		}else {
-			if (el.css('transform') == "translateY(100px)") return;
-			el.css('transform',"translateY(100px)");
+			if (el.css('transform') == "translateY(60px)") return;
+			el.css('transform',"translateY(60px)");
 		}
 	}
 
