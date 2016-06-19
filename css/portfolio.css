@@ -18,6 +18,11 @@
 	background-color: #fafafa;
 }
 
+.portfolio-page > div > .row > .container {
+	width: 100%;
+	overflow: hidden;
+}
+
 .portfolio-page div .row .container .tablet-cel > img {
 	bottom: 0;
 }
