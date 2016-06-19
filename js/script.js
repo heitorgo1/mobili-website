@@ -32,8 +32,8 @@ $(function(){
 		var rect = el.getBoundingClientRect();
 
 		return (
-				rect.top >= -30 &&
-				rect.bottom-101 <= (window.innerHeight || document.documentElement.clientHeight)  /*or $(window).height() */
+				rect.top >= 30 &&
+				rect.bottom-100 <= (window.innerHeight || document.documentElement.clientHeight)  /*or $(window).height() */
 			   );
 	}
 
