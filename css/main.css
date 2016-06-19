@@ -239,7 +239,8 @@
 }
 
 #loader {
-	margin-top: 150px;
+	display: block;
+	margin: 50% auto;
 }
 
 /* END MAIN CONTENT */

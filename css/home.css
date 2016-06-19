@@ -1,0 +1,202 @@
+#carousel-generic{
+	height: 300px;
+	margin-bottom: -30px;
+}
+
+
+.carousel-indicators  li {
+
+	height: 12px;
+	width: 12px;
+	border-color: #53acfb;
+	border-radius: 12px;
+	margin: 10px 10px -15px 10px;
+}
+
+.carousel-indicators .active {
+	margin: 10px 10px -15px 10px;
+	width: 12px;
+	height: 12px;
+	background-color: #666666;
+}
+
+.carousel-control {
+	background: none;
+	text-shadow: none;
+}
+
+.carousel-control.left {
+	background: none;
+}
+
+.carousel-control.right {
+	background: none;
+}
+
+.site-text h2 {
+	text-transform: uppercase;
+}
+
+.site-text {
+	text-align: center;
+	height: 180px;
+	overflow: hidden;
+}
+
+.site-text p {
+	font-size: 1em;
+}
+
+.tablet-cel {
+	position:relative;
+}
+
+.tablet-cel > .imac {
+	position: absolute;
+	right: 40px;
+	bottom: 0;
+	z-index: 0;
+}
+
+.tablet-cel > .iphone {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+/* END JUMBOTRON*/
+
+/* START SECOND CONTENT*/
+
+#home  {
+	background-color: #fafafa;
+}
+
+#second-content > div {
+	text-align: center;
+	height: 250px;
+	padding-top: 50px;
+	padding-bottom: 0;
+}
+#second-content > div > img {
+	display: inline;
+}
+
+#second-content > div > p {
+	margin-top: 20px;
+}
+
+
+/*END SECOND CONTENT*/
+
+/* LARGE DEVICES */
+@media (min-width: 992px) {
+
+	.tablet-cel {
+		height: 320px;
+	}
+
+	.tablet-cel > img {
+		zoom: 1;
+	}
+
+	.carousel-control {	
+		margin: 0 -100px;
+	}
+
+	#second-content > div {
+		margin-top: -30px;
+	}
+
+	#big-logo {
+		border-right: 1px solid rgba(102,102,102,0.8);
+	}
+
+	#purple-lamp {
+		border-left: 1px solid rgba(102,102,102,0.8);
+	}
+	
+	.site-text {
+		padding: 20px 120px 20px 0;
+	}
+}
+
+/* MEDIUM DEVICES */
+@media (min-width: 768px) and (max-width: 991px) {
+	#second-content > div {
+		margin-top: 0;
+	}
+
+	#big-logo {
+		border-bottom: 1px solid rgba(102,102,102,0.8);
+	}
+
+	#purple-lamp {
+		border-top: 1px solid rgba(102,102,102,0.8);
+	}
+	
+	.site-text {
+		margin-top: -12px;
+		margin-bottom: 0;
+	}
+
+	.tablet-cel {
+		margin-top: -20px;
+		height: 170px;
+	}
+	
+	.tablet-cel > .imac {
+		width: 400px;
+		position: static;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.tablet-cel > .iphone {
+		width: 90px;
+		left: 70%;
+		bottom: -2px;
+	}
+
+}
+
+
+/* MOBILE DEVICES */
+@media (max-width: 767px) {
+	#second-content > div {
+		margin-top: 0;
+	}
+
+	#big-logo {
+		border-bottom: 1px solid rgba(102,102,102,0.8);
+	}
+
+	#purple-lamp {
+		border-top: 1px solid rgba(102,102,102,0.8);
+	}
+	
+	.site-text {
+		margin-top: -12px;
+		margin-bottom: 0;
+	}
+
+	.tablet-cel {
+		margin-top: -40px;
+		height: 170px;
+	}
+	
+	.tablet-cel > .imac {
+		width: 300px;
+		position: static;
+		display: block;
+		margin: 30px auto;
+	}
+
+	.tablet-cel > .iphone {
+		width: 80px;
+		display: block;
+		left: 70%;
+		bottom: -5px;
+	}
+}
