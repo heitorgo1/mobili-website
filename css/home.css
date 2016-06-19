@@ -3,20 +3,24 @@
 	margin-bottom: -30px;
 }
 
+.jumbotron {
+	border-bottom: 3px solid #cccccc;
+}
+
 
 .carousel-indicators  li {
 
-	height: 12px;
-	width: 12px;
+	height: 15px;
+	width: 15px;
 	border-color: #53acfb;
 	border-radius: 12px;
-	margin: 10px 10px -15px 10px;
+	margin: 10px 15px -15px 15px;
 }
 
 .carousel-indicators .active {
-	margin: 10px 10px -15px 10px;
-	width: 12px;
-	height: 12px;
+	margin: 10px 15px -15px 15px;
+	width: 15px;
+	height: 15px;
 	background-color: #666666;
 }
 
@@ -93,6 +97,10 @@
 /* LARGE DEVICES */
 @media (min-width: 992px) {
 
+	#carousel-generic {
+		margin-top: -50px;
+	}
+
 	.tablet-cel {
 		height: 320px;
 	}
@@ -102,7 +110,7 @@
 	}
 
 	.carousel-control {	
-		margin: 0 -100px;
+		margin: 0 -60px;
 	}
 
 	#second-content > div {
@@ -124,6 +132,11 @@
 
 /* MEDIUM DEVICES */
 @media (min-width: 768px) and (max-width: 991px) {
+
+	#carousel-generic {
+		margin-top: -50px;
+	}
+
 	#second-content > div {
 		margin-top: 0;
 	}
@@ -142,7 +155,7 @@
 	}
 
 	.tablet-cel {
-		margin-top: -20px;
+		margin-top: -52px;
 		height: 170px;
 	}
 	
@@ -164,6 +177,11 @@
 
 /* MOBILE DEVICES */
 @media (max-width: 767px) {
+
+	#carousel-generic {
+		margin-top: -30px;
+	}
+
 	#second-content > div {
 		margin-top: 0;
 	}
@@ -182,15 +200,15 @@
 	}
 
 	.tablet-cel {
-		margin-top: -40px;
-		height: 170px;
+		margin-top: -50px;
+		height: 150px;
 	}
 	
 	.tablet-cel > .imac {
 		width: 300px;
 		position: static;
 		display: block;
-		margin: 30px auto;
+		margin: 5px auto;
 	}
 
 	.tablet-cel > .iphone {

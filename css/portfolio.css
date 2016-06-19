@@ -1,0 +1,33 @@
+.fitness {
+	background-color: #ebebeb;
+}
+
+.acqua {
+	background-color: #919ccb;
+}
+
+.acqua > .container > .site-text > h2 {
+	color: #fff;
+}
+
+.acqua > .container > .site-text > p {
+	color: #fff;
+}
+
+.acai {
+	background-color: #fafafa;
+}
+
+.portfolio-page div .row .container .tablet-cel > img {
+	bottom: 0;
+}
+
+@media (max-width: 992px) {
+	.site-text {
+		margin-top: 20px;
+	}
+
+	.tablet-cel .iphone {
+		bottom: 0;
+	}
+}
