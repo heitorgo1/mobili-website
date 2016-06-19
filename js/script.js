@@ -1,7 +1,26 @@
 
 // On Load
 $(function(){
-
+//	
+//	var val = 0;
+//	var previousScroll = 0;
+//	$(document).scroll(function(){
+//		console.log($('.fitness .container .tablet-cel').offset().top-$(document).scrollTop());
+//		console.log($('.acqua .container .tablet-cel').offset().top-$(document).scrollTop());
+//		console.log($('.acai .container .tablet-cel').offset().top-$(document).scrollTop());
+//
+//		var diff = $('.fitness .container .tablet-cel').offset().top-$(document).scrollTop();
+//		var s = $(document).scrollTop();
+//		if ((diff < 20 && diff > -20) && s > previousScroll) {
+//			$('.fitness .container .tablet-cel').css('transition',"all 2s");
+//			$('.fitness .container .tablet-cel').css('transform',"translate(0,"+100+"px)");
+//		}
+//		else if ((diff < 20 && diff > -20) && s < previousScroll) {	
+//			$('.fitness .container .tablet-cel').css('transition',"all 2s");
+//			$('.fitness .container .tablet-cel').css('transform',"translate(0,0)");
+//		}
+//		previousScroll = $(document).scrollTop();
+//	});
 });
 
 
