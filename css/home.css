@@ -3,6 +3,10 @@
 	margin-bottom: -30px;
 }
 
+.portfolio-page > div > .row > .container {
+	overflow: hidden;
+}
+
 .jumbotron {
 	border-bottom: 3px solid #cccccc;
 }
@@ -53,6 +57,8 @@
 
 .tablet-cel {
 	position:relative;
+	transition: all 2s;
+	-webkit-backface-visibility: hidden;
 }
 
 .tablet-cel > .imac {

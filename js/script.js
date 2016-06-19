@@ -21,6 +21,44 @@ $(function(){
 //		}
 //		previousScroll = $(document).scrollTop();
 //	});
+
+	function isElementInViewport (el) {
+
+		//special bonus for those using jQuery
+		if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		}
+
+		var rect = el.getBoundingClientRect();
+
+		return (
+				rect.top >= 0 &&
+				rect.bottom-101 <= (window.innerHeight || document.documentElement.clientHeight)  /*or $(window).height() */
+			   );
+	}
+
+	var elementTranslate = function(el) {
+		console.log(isElementInViewport(el));
+		if (isElementInViewport(el)) {
+			if (el.css('transform') == "translateY(0)") return;
+			el.css('transform',"translateY(0)");
+		}else {
+			if (el.css('transform') == "translateY(100px)") return;
+			el.css('transform',"translateY(100px)");
+		}
+	}
+
+	$(document).scroll(function(){
+		console.log(isElementInViewport($('.fitness .container .tablet-cel')));
+		console.log(isElementInViewport($('.acqua .container .tablet-cel')));
+		console.log(isElementInViewport($('.acai .container .tablet-cel')));
+		console.log(window.innerWidth + " " + window.innerHeight+" "+ document.documentElement.clientWidth+ " " +
+				document.documentElement.clientWidth+" " +$(window).height());
+		elementTranslate($('.fitness .container .tablet-cel'));
+		elementTranslate($('.acqua .container .tablet-cel'));
+		elementTranslate($('.acai .container .tablet-cel'));
+	
+	});
 });
 
 
