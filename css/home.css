@@ -173,6 +173,11 @@
 		padding: 180px 0 0 40px;
 	}
 
+	.item > .row > .container > .site-text {
+		padding-left: 120px;
+		padding-right: 0;
+	}
+
 }
 
 
@@ -211,7 +216,7 @@
 
 	.tablet-cel > .imac {
 		width: 482px;
-		height: 250px;
+		height: 249px;
 		background-size: contain;
 	}
 
