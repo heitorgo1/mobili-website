@@ -49,15 +49,9 @@ $(function(){
 	}
 
 	$(document).scroll(function(){
-		console.log(isElementInViewport($('.fitness .container .tablet-cel')));
-		console.log(isElementInViewport($('.acqua .container .tablet-cel')));
-		console.log(isElementInViewport($('.acai .container .tablet-cel')));
-		console.log(window.innerWidth + " " + window.innerHeight+" "+ document.documentElement.clientWidth+ " " +
-				document.documentElement.clientWidth+" " +$(window).height());
 		elementTranslate($('.fitness .container .tablet-cel'));
 		elementTranslate($('.acqua .container .tablet-cel'));
-		elementTranslate($('.acai .container .tablet-cel'));
-	
+		elementTranslate($('.acai .container .tablet-cel'));	
 	});
 });
 
@@ -90,6 +84,11 @@ var removeActive = function() {
 	$('#links > ul > .active').removeClass('active');
 }
 
+var setLogo = function(url) {	
+	$('#logo-img').css('background',"url('"+url+"') no-repeat");
+	$('#logo-img').css('background-size',"contain");
+}
+
 var loadContent = function(url) {	
 	showLoading("#main-content");
 	$ajaxUtils.sendGetRequest(url, function(html){	
@@ -107,19 +106,19 @@ $(function(){
 
 $('.home').click(function(){
 	loadContent(homeUrl);
-	$('#logo-img').css('background',"url('images/logo.png') no-repeat");
+	setLogo("images/logo.png");
 });
 
 $('.portfolio').click(function(){
 	loadContent(portfolioUrl);
 	$('.portfolio').parent().addClass('active');
-	$('#logo-img').css('background',"url('images/nofill_logo.png') no-repeat");
+	setLogo("images/nofill_logo.png");
 });
 
 $('.sobrenos').click(function(){
 	loadContent(sobrenosUrl);
 	$('.sobrenos').parent().addClass('active');
-	$('#logo-img').css('background',"url('images/nofill_logo.png') no-repeat");
+	setLogo("images/nofill_logo.png");
 });
 
 
