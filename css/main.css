@@ -3,6 +3,11 @@
 	src: url('../fonts/Asap-Regular.ttf');
 }
 
+@font-face {
+	font-family: Dosis;
+	src: url ('../fonts/Dosis-Regular.ttf');
+}
+
 html, body {
 	max-width: 100%;
 	overflow-x: hidden;
@@ -137,6 +142,11 @@ html, body {
 
 /* START MODAL */
 
+.modal {
+	max-width: 100%;
+	overflow: hidden;
+}
+
 .modal.fade .modal-dialog {
 	transition: none;
 	-webkit-transition: none;
@@ -199,10 +209,11 @@ html, body {
 
 
 #white-logo-img {
-	background: url('../images/logo_white.png') no-repeat;
+	background: url('../images/logo-branco.gif') no-repeat;
+	background-size: contain;
 	width: 60px;
 	height: 60px;
-	margin: -10px auto 0 auto;
+	margin: -8px auto;
 }
 
 .modal-body > a {
