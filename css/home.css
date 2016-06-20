@@ -53,7 +53,11 @@
 
 .tablet-cel {
 	position:relative;
-	transition: all 1.5s;
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+	-o-transition: transform 1.5s;
+	-ms-transition: transform 1.5s;
+	-moz-transition: transform 1.5s;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -166,7 +170,7 @@
 
 	.site-text {
 		height: 500px;
-		padding: 200px 0 0 120px;
+		padding: 180px 0 0 40px;
 	}
 
 }
