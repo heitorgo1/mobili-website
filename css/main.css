@@ -294,7 +294,7 @@ html, body {
 /* END FOOTER */
 
 /** Large Devices */
-@media (min-width: 992px) {
+@media (min-width: 1201px) {
 	#nav-list > li {
 		margin: 0 0 0 180px;
 	}
@@ -308,6 +308,21 @@ html, body {
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+	#nav-list > li {
+		margin: 0 0 0 180px;
+	}
+
+	#logo-img {
+		float: left;
+	}
+
+	.navbar {
+		padding-left: 0;
+	}
+
+}
+
 /** Medium Devices*/
 @media (min-width: 768px) and (max-width: 991px){
 
@@ -319,6 +334,7 @@ html, body {
 	#nav-list > li {
 		margin: 0 50px;
 	}
+	
 
 }
 
