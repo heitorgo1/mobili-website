@@ -302,6 +302,10 @@ html, body {
 	#logo-img {
 		float: left;
 	}
+
+	.navbar {
+		padding-left: 160px;
+	}
 }
 
 /** Medium Devices*/
