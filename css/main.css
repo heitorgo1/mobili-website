@@ -309,6 +309,7 @@ html, body {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
 	#nav-list > li {
 		margin: 0 0 0 180px;
 	}
