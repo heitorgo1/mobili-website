@@ -192,10 +192,12 @@
 	}
 
 	.jumbotron {
-		height: 340px;
+		height: 360px;
 	}
 
-
+	.carousel-indicators {
+		margin-bottom: -30px;
+	}
 
 	.carousel-control {	
 		margin: 0 -60px;
@@ -228,18 +230,18 @@
 
 
 	.tablet-cel {
-		height: 340px;
+		height: 360px;
 	}
 
 	.tablet-cel > .imac {
-		width: 482px;
-		height: 249px;
+		width: 550px;
+		height: 280px;
 		background-size: contain;
 	}
 
 	.tablet-cel > .iphone {
-		width: 128px;
-		height: 180px;
+		width: 142px;
+		height: 200px;
 		background-size: contain;
 	}
 	
