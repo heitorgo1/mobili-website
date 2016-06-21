@@ -18,37 +18,7 @@
 	background-color: #fafafa;
 }
 
-.portfolio-page > div > .row > .container {
-	width: 100%;
-	overflow: hidden;
-}
 
-.portfolio-page div .row .container .tablet-cel > img {
-	bottom: 0;
-}
-
-@media (min-width: 992px) {
-	#site-desktop {
-		position: absolute;
-		bottom: 0;
-		right: 60px;
-		height: 214px;
-		width: 438px;
-		background: url('https://placeholdit.imgix.net/~text?txtsize=41&txt=438%C3%97214&w=438&h=214') no-repeat;
-	}
-
-	#site-mobile {
-		position: absolute;
-		bottom: 0;
-		right: 9px;
-		height: 137px;
-		width: 95px;
-		z-index: 3;
-		background: url('https://placeholdit.imgix.net/~text?txtsize=10&txt=95%C3%97137&w=95&h=137') no-repeat;
-	}
-
-
-}
 
 @media (max-width: 991px) {
 	.site-text {

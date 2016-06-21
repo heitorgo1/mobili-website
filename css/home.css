@@ -1,24 +1,32 @@
-#carousel-generic{
-	height: 300px;
-	margin-bottom: -30px;
+/*
+.container {
+	border: 2px solid green;
 }
 
-.jumbotron {
-	border-bottom: 3px solid #cccccc;
+.tablet-cel {
+	border: 2px solid blue;
 }
+
+.site-text {
+	border: 2px solid orange;
+}
+.navbar {
+	border: 2px solid red;
+}
+*/
 
 
 .carousel-indicators  li {
-
 	height: 10px;
 	width: 10px;
 	border-color: #53acfb;
 	border-radius: 12px;
-	margin: 10px 12px -30px 12px;
+	margin: 10px 8px 0 8px;
 }
 
+
 .carousel-indicators .active {
-	margin: 10px 12px -30px 12px;
+	margin: 10px 8px 0 8px;
 	width: 10px;
 	height: 10px;
 	background-color: #AAAAAA;
@@ -29,7 +37,7 @@
 	text-shadow: none;
 }
 
-.carousel-control.left {
+.carousel-control.left { 
 	background: none;
 }
 
@@ -43,8 +51,8 @@
 
 .site-text {
 	text-align: center;
-	height: 260px;
 	overflow: hidden;
+	margin: 30px 0;
 }
 
 .site-text p {
@@ -63,7 +71,7 @@
 
 .tablet-cel > .imac {
 	position: absolute;
-	right: 40px;
+	left: 0;
 	bottom: 0;
 	z-index: 0;
 	background: url('../images/imac_lg.gif') no-repeat;
@@ -87,16 +95,13 @@
 
 #second-content > div {
 	text-align: center;
-	height: 300px;
-	padding-top: 15px;
-	padding-bottom: 0;
 }
 
 #big-logo-img {
 	background: url('../images/logo.png') no-repeat;
 	background-size: contain;
 	width: 140px;
-	height: 180px;
+	height: 160px;
 	display: inline-block;
 } 
 
@@ -104,9 +109,8 @@
 	background: url('../images/lampada-lilaz.gif') no-repeat;
 	background-size: contain;
 	display: inline-block;
-	width: 110px;
-	height: 180px;
-	margin-top: 10px;
+	width: 90px;
+	height: 160px;
 }
 
 
@@ -116,32 +120,24 @@
 /* LARGER DEVICES */
 @media  (min-width: 1500px){
 	.tablet-cel > .imac {
-		height: 400px;
-		width: 780px;
-	}
-
-	.tablet-cel > .iphone {
-		width: 210px;
-		height: 300px;
+		height: 70%;
+		width: 100%;
 		background-size: contain;
 	}
 
-
-	#carousel-generic {
-		height: 520px;
-		margin-top: -50px;
+	.tablet-cel > .iphone {
+		right: -80px;
+		width: 30%;
+		height: 50%;
+		background-size: contain;
 	}
 
 	.tablet-cel {
-		height: 540px;
+		height: 520px;
 	}
 
-	.tablet-cel > img {
-		zoom: 1.6;
-	}
-
-	#second-content > div {
-		margin-top: -30px;
+	.home-item {
+		padding: 40px 0;
 	}
 
 	#big-logo-img {
@@ -151,8 +147,6 @@
 	.second-img + p {
 		margin-top: 10px;
 	}
-
-
 
 	#big-logo {
 		border-right: 1px solid rgba(102,102,102,0.8);
@@ -171,53 +165,35 @@
 	}
 
 	.site-text {
-		height: 500px;
-		padding: 180px 0 0 40px;
+		padding: 100px 0 0 100px;
 	}
 
-	.item > .row > .container > .site-text {
-		padding-left: 120px;
-		padding-right: 0;
-	}
 
 }
 
+@media (min-width: 1200px) and (max-width: 1499px) {
 
-
-/* LARGE DEVICES */
-@media (min-width: 992px) and (max-width: 1499px) {
-
-	#carousel-generic {
-		margin-top: -50px;
-	}
-
-	.jumbotron {
-		height: 360px;
-	}
-
-	.carousel-indicators {
-		margin-bottom: -30px;
-	}
 
 	.carousel-control {	
 		margin: 0 -60px;
 	}
 
-	#second-content > div {
-		height: 240px;
-		margin-top: -30px;
-		margin-bottom: 0;
+	.home-item {
+		padding: 30px 0;
 	}
 
 	#big-logo-img {
-		margin-top: 10px;
-		width: 118px;
-		height: 160px;
+		width: 114px;
+		height: 130px;
+	}
+
+	.second-img + p {
+		margin-top: 20px;
 	}
 
 	#lamp-img {
-		width: 80px;
-		height: 160px;
+		width: 76px;
+		height: 130px;
 	}
 
 	#big-logo {
@@ -230,43 +206,98 @@
 
 
 	.tablet-cel {
-		height: 360px;
+		height: 420px;
 	}
 
 	.tablet-cel > .imac {
-		width: 550px;
-		height: 280px;
+		width: 100%;
+		height: 85%;
 		background-size: contain;
 	}
 
 	.tablet-cel > .iphone {
-		width: 142px;
-		height: 200px;
+		width: 20%;
+		height: 50%;
 		background-size: contain;
 	}
+
 	
 	.site-text {
-		padding: 80px 0 0 50px;
+		padding: 50px 0 0 40px;
+	}
+}
+
+
+
+/* LARGE DEVICES */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+	.carousel-control {	
+		margin: 0 -60px;
+	}
+
+	.home-item {
+		padding: 30px 0;
+	}
+
+	#big-logo-img {
+		width: 114px;
+		height: 130px;
+	}
+
+	.second-img + p {
+		margin-top: 20px;
+	}
+
+	#lamp-img {
+		width: 76px;
+		height: 130px;
+	}
+
+	#big-logo {
+		border-right: 1px solid rgba(102,102,102,0.8);
+	}
+
+	#purple-lamp {
+		border-left: 1px solid rgba(102,102,102,0.8);
+	}
+
+
+	.tablet-cel {
+		height: 400px;
+	}
+
+	.tablet-cel > .imac {
+		width: 100%;
+		height: 80%;
+		background-size: contain;
+	}
+
+	.tablet-cel > .iphone {
+		width: 25%;
+		right: -50px;
+		height: 55%;
+		background-size: contain;
+	}
+
+	
+	.site-text {
+		padding: 50px 0 0 100px;
 	}
 }
 
 /* MEDIUM DEVICES */
 @media (min-width: 768px) and (max-width: 991px) {
 
-	#carousel-generic {
-		margin-top: -50px;
-	}
 
 	#second-content {
-		margin: -30px -120px 0 -120px;
+		margin: 0 -120px 0 -120px;
 		padding: 0;
 	}
 
-	#second-content > div {
-		margin-top: 0;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		padding-top: 40px;
+	.home-item {
+		padding: 30px 0;
 	}
 
 	#big-logo {
@@ -279,27 +310,29 @@
 
 
 	#big-logo-img {
-		width: 100px;
-		height: 120px;
+		width: 95px;
+		height: 110px;
 	}
 
-	#big-logo-img + p {
-		margin-top: 20px;
+	.home-item {
+		padding: 20px 0;
+	}
+
+	.second-img + p {
+		margin-top: 10px;
 	}
 
 	#lamp-img {
-		width: 80px;
-		height: 150px;
+		width: 70px;
+		height: 110px;
 	}
 	
 	.site-text {
-		margin-top: -12px;
-		margin-bottom: 0;
+		margin-top: -20px;
 	}
 
 	.tablet-cel {
-		margin-top: -130px;
-		height: 170px;
+		height: 200px;
 	}
 	
 	.tablet-cel > .imac {
@@ -325,34 +358,22 @@
 /* MOBILE DEVICES */
 @media (max-width: 767px) {
 
-	#carousel-generic {
-		margin-top: -30px;
+	.home-item {
+		padding: 20px 0;
 	}
 
-
-	#second-content {
-		margin-top: -20px;
-	}
-	#second-content > div {
-		height: 210px;
-		margin: 0;
-		padding-top: 10px;
-	}
-
-	.home-item > p {
-		padding: 0;
-		margin-top: 8px;
+	.second-img + p {
+		margin-top: 10px;
 	}
 
 	#big-logo-img {
-		margin-top: 10px;
-		width: 80px;
+		width: 87px;
 		height: 100px;
 	}
 
 	#lamp-img {
-		height: 120px;
-		width: 70px;
+		height: 100px;
+		width:60px;
 	}
 
 
@@ -360,29 +381,18 @@
 		border-bottom: 1px solid rgba(102,102,102,0.8);
 	}
 
-
-
 	#purple-lamp {
 		border-top: 1px solid rgba(102,102,102,0.8);
 	}
-	
-	.site-text {
-		margin-top: -12px;
-		margin-bottom: 0;
-	}
 
-	.tablet-cel {
-		margin-top: -120px;
-		height: 150px;
-	}
-	
+
 	.tablet-cel > .imac {
-		width: 300px;
-		height: 200px;
+		width: 320px;
+		height: 160px;
 		background-size: contain;
 		position: static;
 		display: block;
-		margin: 5px auto;
+		margin: 0 auto;
 	}
 
 	.tablet-cel > .iphone {
@@ -390,7 +400,6 @@
 		height: 120px;
 		background-size: contain;
 		display: block;
-		left: 70%;
-		bottom: -5px;
+		left: 75%;
 	}
 }
