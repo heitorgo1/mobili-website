@@ -13,7 +13,6 @@ html, body {
 	overflow-x: hidden;
 }
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -306,7 +305,7 @@ html, body {
 
 	
 	.navbar > .container {
-		padding-left: 80px;
+		padding-left: 90px;
 	}
 }
 
