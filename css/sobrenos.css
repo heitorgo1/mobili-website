@@ -6,7 +6,6 @@ body {
 	background-color: #fff;
 }
 
-
 #logo-name > img {
 	display: block;
 	margin-right: auto;
@@ -17,11 +16,9 @@ body {
 	width: 120px;
 }
 
-
 #logo-name:first-child {
 	margin-top: 110px;
 }
-
 
 #company-name {
 	font-family: 'Dosis', sans-serif;
@@ -29,7 +26,6 @@ body {
 	font-size: 3em;
 	color: #53acfb;
 }
-
 
 #second {
 	background-color: #919ccb;
@@ -42,7 +38,6 @@ body {
 .text {
 	line-height: 1.7;
 }
-
 
 #vision > h3 {
 	color: #fff;
@@ -70,7 +65,7 @@ body {
 	}
 
 	#lamp {
-		margin-top: 230px;
+		margin-top: 300px;
 	}
 
 }
