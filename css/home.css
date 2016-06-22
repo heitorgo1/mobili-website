@@ -1,7 +1,9 @@
+
 /*
 .container {
-	border: 2px solid green;
+	border: 2px solid red;
 }
+
 .tablet-cel {
 	border: 2px solid blue;
 }
@@ -118,6 +120,10 @@
 
 /* LARGER DEVICES */
 @media  (min-width: 1500px){
+	#logo-img {
+		margin-left: 17px;
+	}
+
 	.tablet-cel > .imac {
 		height: 70%;
 		width: 100%;
@@ -172,8 +178,8 @@
 
 @media (min-width: 1200px) and (max-width: 1499px) {
 
-	#nav-list {
-		margin-right: 40px;
+	#logo-img {
+		margin-left: 17px;
 	}
 
 	.container {

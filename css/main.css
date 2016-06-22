@@ -125,6 +125,7 @@ html, body {
 
 
 .expand > a {
+	cursor: pointer;
 	display: block;
 	text-align: left;
 	text-decoration: none;
@@ -315,7 +316,7 @@ html, body {
 @media (min-width: 1500px) {
 
 	#nav-list > li + li {
-		margin: 0 0 0 300px;
+		margin: 0 0 0 260px;
 	}
 
 	#logo-img {
