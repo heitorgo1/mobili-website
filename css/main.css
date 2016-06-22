@@ -31,6 +31,7 @@ html, body {
 }
 
 
+
 /* START NAVBAR*/
 #logo-img {
 	background: url('../images/logo.png')  no-repeat;
@@ -73,7 +74,7 @@ html, body {
 }
 
 #nav-list > li > a {
-	font-size: 1.1em;
+	font-size: 1.05em;
 }
 
 .expandable {
@@ -107,7 +108,7 @@ html, body {
 	top: 40px;
 	z-index: 2;
 	text-align: right;
-	padding: 13px 15px 13px 20px;
+	padding: 14px 14px 13px 14px;
 }
 
 .expand:hover {
@@ -119,6 +120,7 @@ html, body {
 
 .expand:hover > span {
 	visibility: visible;
+	font-size: 1.05em;
 }
 
 
@@ -309,8 +311,8 @@ html, body {
 
 /* END FOOTER */
 
-/** Large Devices */
-@media (min-width: 1201px) {
+/** Larger Devices */
+@media (min-width: 1500px) {
 
 	#nav-list > li + li {
 		margin: 0 0 0 300px;
@@ -319,10 +321,22 @@ html, body {
 	#logo-img {
 		float: left;
 	}
+}
+
+/** Large Devices */
+@media (min-width: 1200px) and (max-width: 1499px) {
+
+	#nav-list > li + li {
+		margin: 0 0 0 240px;
+	}
+
+	#logo-img {
+		float: left;
+	}
 	
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
 
 	#nav-list > li {
 		margin: 0 0 0 190px;
